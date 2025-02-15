@@ -1,2 +1,2 @@
 # atividadeAlgoritimos
-repositório para armazenar atividades das aulas de algoritimos.
+repositório para armazenarb as atividades das aulas de algoritimos.
