@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>O aluno vai será aprovado para o próximo semestre??</h2>  
+
+<p>digite a sua nota da avaliação continuada:</p>
+<input type="text" id="input_Ncontinuada" value=""> <br><br>
+
+<p>digite a sua nota da avaliação semestral:</p>
+<input type="text" id="input_Nsemestral" value="">
+
+<p>digite o seu nome:</p>
+<input type="text" id="input_nome" value=""> <br><br>
+
+<button onclick="verMedia()">ver média</button>
+
+<script>
+    function verMedia() {
+
+        alert('A média de ' + input_nome.value + ' será de ' + (Number (input_Ncontinuada.value*0.4) + Number(input_Nsemestral.value*0.6)))
+        
+    }
+
+</script>
+</body>
+</html>

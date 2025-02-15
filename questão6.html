@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>digite o primeiro número: </p>
+    <input type="text"  id="input_n1" value="">
+    <p>digite o segundo número:</p>
+    <input type="text"  id="input_n2"  value="">
+    <br><br>
+
+    <button onclick="soma()">adição</button>
+    <button onclick="menos()">subtração</button>
+    <button onclick="multiplicacao()">multiplicação</button>
+    <button onclick="divisao()">divisão</button>
+
+    <script> 
+    function soma() {
+    alert( Number(input_n1.value) +  Number(input_n2.value)) 
+}
+     function menos() {
+        alert(Number(input_n1.value) - Number(input_n2.value))
+     }   
+
+     function multiplicacao() {
+        alert(input_n1.value * input_n2.value)
+     }
+     function divisao() {
+        alert(input_n1.value/input_n2.value)
+     }
+
+
+    </script>
+</body>
+</html>

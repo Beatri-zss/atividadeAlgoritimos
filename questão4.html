@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>digite o nome do guerrreiro:</h3>
+    <input type="text" id="input_GuerreiroNome" value=""> <br><br>
+
+    <h3>digite on Ki normal do guerreiro: </h3>
+    <input type="text"  id="input_KiNormal" value="">
+    <button onclick="ver_Ki()">Ver ki em cada forma</button>
+</body>
+</html>
+
+<script>
+    function ver_Ki(){
+        alert('Se Guerreiro '+ input_GuerreiroNome.value +  ' assumir a forma SUPER SAYAJIN, terá o seu ki aumentado 50x. Então o novo ki será de: ' + input_KiNormal.value*50);
+        alert('Se Guerreiro ' + input_GuerreiroNome.value + ' assumir a forma SUPER SAYAJIN 2, terá o seu ki aumentado 100x. Então seu novo ki será de: ' + input_KiNormal.value*100);
+
+        
+    }
+</script>

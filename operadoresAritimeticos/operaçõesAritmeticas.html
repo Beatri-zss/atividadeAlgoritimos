@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>primeiro numero</H3>
+  <input id="inputN1" type="text" value=""> 
+  <br><br>
+
+  <h3>segundo numero</h3>
+  <input id="inputN2" type="text" value="">
+  <br><br>
+
+  <button onclick="multiplicar()">multiplicar</button>
+  <button onclick="dividir ()">dividir</button>
+  <button onclick="subtrair ()">subtrair</button>
+  <button onclick="somar ()">somar</button>
+</body>
+</html>
+
+<script>
+
+        function multiplicar () {
+            alert(`O resultado é: ${inputN1.value * inputN2.value}`);
+        }
+        function dividir () {
+            alert('O resultado é: ' + (inputN1.value / inputN2.value));
+        }
+        function subtrair () {
+            alert('O resultado é: '+ (inputN1.value - inputN2.value));
+        }
+        function somar () {
+            alert('O resultado é: '+ (Number(inputN1.value) + Number(inputN2.value)));
+        }
+        
+
+</script> 
