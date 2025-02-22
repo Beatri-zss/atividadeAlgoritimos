@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Digite um número para ver a tabuada:
+   <input type="text" id="input_Ntabuada" value=""> 
+   <button onclick="verTabuada()">ver tabuada</button>
+   <div id="div_mensagem" value=""></div>
+</body>
+</html>
+<script>
+    function verTabuada(){
+        var TabuadaN = Number(input_Ntabuada.value)
+        div_mensagem.innerHTML = `${TabuadaN}x 1 =  ${TabuadaN*1}<br>
+        ${TabuadaN}x 2 =  ${TabuadaN*2}<br>
+        ${TabuadaN}x 3 =  ${TabuadaN*3}<br>
+        ${TabuadaN}x 4 =  ${TabuadaN*4}<br>
+        ${TabuadaN}x 5 =  ${TabuadaN*5}<br>
+        ${TabuadaN}x 6 =  ${TabuadaN*6}<br>
+        ${TabuadaN}x 7 =  ${TabuadaN*7}<br>
+        ${TabuadaN}x 8 =  ${TabuadaN*8}<br>
+        ${TabuadaN}x 9 =  ${TabuadaN*9}<br>`
+
+
+}
+
+
+</script>

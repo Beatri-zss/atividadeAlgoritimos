@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Resultado da eleição:</h3>
+    Quantidade de votos do candidato A: <br>
+    <input type="text" id="input_votosA" value=""> <br><br>
+
+    Quantidade de votos do candidato B: <br>
+    <input type="text" id="input_votosB" value=""> <br><br>
+
+    Quantidade de votos brancos: <br>
+    <input type="text" id="input_votosBrancos" value=""> <br><br>
+
+    Quantidade de votos nulos: <br>
+    <input type="text" id="input_votosNulos" value=""> <br><br>
+
+    <button onclick="VerResultado()">Resultado da eleição</button>
+    <div id="div_mensagem"  value=""></div>
+</body>
+
+</html>
+
+<script>
+    
+    function VerResultado() {
+        var candidatoA = Number(input_votosA.value*100/TotalVotos);
+        var candidatoB = Number(input_votosB.value*100/TotalVotos);
+        var votosInvalidos = (Number(input_votosBrancos.value) + Number(input_votosNulos.value)*100);
+        var TotalVotos = candidatoA + candidatoB + votosInvalidos;
+        
+        div_mensagem.ineerHTML = `O total de votos: <br> ${TotalVotos} <br>
+         candidado A: ${candidatoA}% <br>
+         Candidato B: ${candidatoB}% <br>
+         Inválidos: ${votosInvalidos}%`
+        
+        
+        
+
+    }
+
+        
+        //alert('O total de votos: ' + TotalVotos + '\n candidado A: ' + (candidatoA * 100 / TotalVotos) + '% \n Candidato B: ' + (candidatoB* 100 / TotalVotos) + '% \n Inválidos: ' + (votosInvalidos*100/TotalVotos)+'%' );
+
+
+    
+
+
+</script>

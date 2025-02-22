@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    nota 1:
+    <input type="text" id="input_nota1" value=""> <br><br>
+    nota 2:
+    <input type="text" id="input_nota2" value=""> <br><br>
+    nota 3:
+    <input type="text" id="input_nota3" value=""> <br><br>
+
+    <button onclick="VerMedia()">Analisar desepenho</button>
+    <div id="div_mensagem" value=""></div>
+
+</body>
+
+</html>
+<script>
+    function VerMedia() {
+
+        var soma = Number(input_nota1.value) + Number(input_nota2.value) + Number(input_nota3.value)
+        var media = soma / 3
+        div_mensagem.innerHTML = `Sua média foi de ${media}`
+        if (media > 9.4) {
+            div_mensagem.innerHTML = `Sua média foi de ${media}. Parabéns, você é fora de série!`
+        };
+
+    }
+
+
+</script>

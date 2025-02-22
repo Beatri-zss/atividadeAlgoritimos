@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Qual o sabor da pizza? <br>
+    <input type="text" id="input_sabor"  value="">
+    <br>
+    Qual o valor da pizza?
+    <br>
+    <input type="text" id="input_valor" value="">
+    <br>
+    Quantos amigos vão comer?
+    <br>
+    <input type="text" id="input_qtdAmigos" value=""> <br><br>
+    <button onclick="verValores()">Ver valor por amigo</button>
+    <div id="div_mensagem" value=""></div>
+</body>
+</html>
+<script>
+    
+    function verValores(){
+    var valor = Number(input_valor.value)
+    var qtdAmigos = Number(input_qtdAmigos.value)
+    var sabor = input_sabor.value
+    var calculo = (valor*0.1 + valor)/qtdAmigos
+div_mensagem.innerHTML = `Cada amigo vai colaborar com R$ ${calculo} para a pizza ${sabor}`
+}
+
+
+
+</script>

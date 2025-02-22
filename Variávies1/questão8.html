@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Digite o "ki base" (força base) do guerreiro Sayajin:</h2>
+    <input type="text" id="input_KiBase" value="">
+    
+   
+    <h3>Transformar em: </h3>
+    <button onclick="ki(50)">SSJ</button>
+    <button onclick="ki(100)">SSJ2</button>
+    <button onclick="ki(200)">SSJ3</button>
+    <div id="div_mensagem" value=""></div>
+</body>
+</html>
+
+<script>
+
+function ki (multiplicador){
+var SSJ = Number(input_KiBase.value)*multiplicador;
+div_mensagem.innerHTML =`  Após se transformar em SSJ, o ki desse Sayajin passa a ser de ${ SSJ} <br>`;
+
+} 
+
+
+
+/*function ki2 (){
+var SSJ2 = Number(input_KiBase.value)*100;
+div_mensagem.innerHTML =` Após se transformar em SSJ2, o ki desse Sayajin passa a ser de ${ SSJ2} <br>`
+                           
+
+};
+
+function ki3 (){
+var SSJ3 = Number(input_KiBase.value)*200;
+ 
+div_mensagem.innerHTML =` Após se transformar em SSJ3, o ki desse Sayajin passa a ser de ${ SSJ3} <br>`
+
+}*/
+
+
+
+
+</script>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    valor da passagem de ônibus:
+    <input type="text" id="input_Vpassagem" value=""> <br>
+    Quantidade de viagens no mês:
+    <input type="text" id="input_qtdViagens" value=""> <br>
+    A distâcia do seu trabalho até sua casa:
+    <input type="text" id="input_distancia" value=""> <br><br>
+    <button onclick="calcularVT()">Calcular VT</button> <br><br>
+    <div id="div_mensagem" value=""></div>
+
+</body>
+
+</html>
+
+
+<script>
+    function calcularVT() {
+        var Valor_passagem = Number(input_Vpassagem.value);
+        var qtd_viagens = Number(input_qtdViagens.value);
+        var Distancia_Km = Number(input_distancia.value);
+        var qtdViagem_Uber = qtd_viagens * 0.1;
+        var Valor_uber = (Distancia_Km * 0.75) * (qtd_viagens * 0.1)   // aqui da o valor do uber por km
+        var qtdViagem_Onibus = (qtd_viagens) - (qtdViagem_Uber);
+        var Valor_onibus = qtdViagem_Onibus * Valor_passagem;
+        var ValorTotal = Valor_onibus + Valor_uber;
+
+
+        div_mensagem.innerHTML = `1.valor da passagem: ${Valor_passagem} reais <br>
+                            2.quantidade de viagens: ${qtd_viagens} viagens no mês <br>
+                            3.distâcia: ${Distancia_Km} km <br>
+                            4.quantidade de viagens de uber: ${qtdViagem_Uber} viagens <br>
+                            5.quantidade de viagens de onibus: ${qtdViagem_Onibus} viagens <br>
+                            6.valor do uber: ${Valor_uber} reais <br>
+                            7.valor do ônibus: ${Valor_onibus} reais <br>
+                            8.   Você vai gastar ${ValorTotal} reais por mês com transporte.`;
+    }
+
+
+</script>
